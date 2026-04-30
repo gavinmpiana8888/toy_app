@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get "up" => "rails/health#show", as: :rails_health_check
-
   root "static_pages#home"
   get "/contact", to: "static_pages#contact"
 
@@ -9,4 +7,7 @@ Rails.application.routes.draw do
       patch :boost
     end
   end
+
+  get "/login", to: "session#new"
 end
+

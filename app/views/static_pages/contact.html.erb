@@ -1,2 +1,9 @@
-<h1>StaticPages#contact</h1>
-<p>Find me in app/views/static_pages/contact.html.erb</p>
+<div class="card page-card p-4">
+  <h1 class="section-title mb-3">Contact</h1>
+  <p class="mb-3">This is the contact page for my Rails toy app.</p>
+
+  <div>
+    <%= link_to "Home", root_path, class: "btn btn-primary me-2" %>
+    <%= link_to "Users", users_path, class: "btn btn-outline-secondary" %>
+  </div>
+</div>

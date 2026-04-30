@@ -1,11 +1,9 @@
-<% content_for :title, "New user" %>
+<div class="card page-card p-4">
+  <h1 class="section-title mb-3">New User</h1>
 
-<h1>New user</h1>
+  <%= render "form", user: @user %>
 
-<%= render "form", user: @user %>
-
-<br>
-
-<div>
-  <%= link_to "Back to users", users_path %>
+  <div class="mt-3">
+    <%= link_to "Back to Users", users_path, class: "btn btn-outline-secondary" %>
+  </div>
 </div>
